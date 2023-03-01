@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: hsl(241, 100%, 89%);
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 40px 20px 40px;
+  background-image: linear-gradient(hsl(255, 100%, 67%), hsl(241, 81%, 54%));
+  overflow: hidden;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+figure {
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 123.75px;
+  height: 123.75px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+article > ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul > li {
+  border-radius: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  font-weight: bold;
+}
+
+ul > li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+li > p:nth-of-type(1) {
+  flex-grow: 2;
+}
+
+li > p:nth-of-type(2) {
+  color: rgba(48, 59, 90, 0.5);
+}
+li > p:nth-of-type(2) span {
+  color: hsl(224, 30%, 27%);
+}
+
+li.reaction {
+  background-color: rgba(255, 87, 87, 0.07);
+  color: hsl(0, 100%, 67%);
+}
+
+li.memory {
+  background-color: rgba(255, 176, 31, 0.07);
+  color: hsl(39, 100%, 56%);
+}
+
+li.verbal {
+  background-color: rgba(0, 189, 145, 0.07);
+  color: hsl(166, 100%, 37%);
+}
+
+li.visual {
+  background-color: rgba(17, 37, 212, 0.07);
+  color: hsl(234, 85%, 45%);
+}
+
+li > .icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+}
+
+.icon-reaction {
+  background: url("./assets/images/icon-reaction.svg");
+}
+
+.icon-memory {
+  background: url("./assets/images/icon-memory.svg");
+}
+
+.icon-verbal {
+  background: url("./assets/images/icon-verbal.svg");
+}
+
+.icon-visual {
+  background: url("./assets/images/icon-visual.svg");
+}
+
+button {
+  padding: 20px;
+  border-radius: 30px;
+  border: none;
+  margin: 20px 0;
+  color: hsl(221, 100%, 96%);
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: hsl(224, 30%, 27%);
+}
+
+/*# sourceMappingURL=styles.css.map */
